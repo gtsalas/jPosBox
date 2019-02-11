@@ -139,7 +139,7 @@ public class PosPrinter {
                 HashPrintRequestAttributeSet hpras=new HashPrintRequestAttributeSet(mpa);
                 final JEditorPane ed = new JEditorPane(
                         "text/html",
-                        "<html><head><style>body{font-size:"+FontSize+"px;}</style></head><body>"+P+"</body></html>");
+                        "<html><head><style>body{font : 9px calibri;}</style></head><body>"+P+"</body></html>");
                 if (/*System.getProperty("os.name").contains("Windows")*/ 1==1){ //POR EL MOTIVO QUE SEA, AHORA ME HA FUNCIONADO CON LINUX
                     ed.print(null, null, false, printServices[0], hpras, false);
                     if (copies>1) ed.print(null, null, false, printServices[0], hpras, false);

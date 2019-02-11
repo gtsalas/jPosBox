@@ -255,7 +255,7 @@ public class Web {
                         nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
                         for (int temp = 0; temp < nl.getLength(); temp++) {
                             Node nNode = nl.item(temp);
-                            P.add(nNode.getTextContent());
+                            P.add("<center>" +nNode.getTextContent()+ "</center>");
                             P.salto();
                         }
                     }
@@ -309,7 +309,21 @@ public class Web {
                             }
                             P.add("</table>");
                         }
-                        else P.add(nNode.getTextContent());
+                        else //P.add(nNode.getTextContent());
+                            if (nNode.hasChildNodes()){ //If is invoice and last lines
+                            // If is left or right more cool
+                            String negrita="";
+                            NodeList nl2=nNode.getChildNodes();
+                            P.add("<table width=\"100%\" cellpadding=0 cellspacing=0>");
+                            for (int temp2=0; temp2 < nl2.getLength();temp2++){
+                                Node nNode2=nl2.item(temp2);
+                                if (nNode2.getNodeName().equals("left")) P.add("<tr><td><div alight=\"left\"><span style=\"font-size: 10px\">"+negrita+nNode2.getTextContent()+"</span></div></td>");
+                                if (nNode2.getNodeName().equals("right"))P.add("<td><div align=\"right\"><span style=\"font-size: 9px\">"+negrita+nNode2.getTextContent()+"</span></div></td></tr>");
+                                if (nNode2.getNodeName().equals("center"))P.add("<td><div align=\"right\"><span style=\"font-size: 8px\">"+negrita+nNode2.getTextContent()+"</span></div></td></tr>");
+                            }
+                            P.add("</table>");
+                        }    
+                        
                         P.salto();
                     }
                     
