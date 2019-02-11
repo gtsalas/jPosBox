@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Thu Dec 28 15:28:17 CET 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0160-9d86-1292-000003237cc8 
-on database directory C:\Users\Windows10\jPosBox\db with class loader sun.misc.Launcher$AppClassLoader@6d06d69c 
-Loaded from file:/C:/Users/Windows10/Desktop/Andreuos/17112017/takepos/dist/lib/derby.jar
+Mon Feb 11 23:02:24 EET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0168-de5e-3d3e-00000f07f3f0 
+on database directory /home/gts/jPosBox/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1698c449 
+Loaded from file:/home/gts/Desktop/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_121-b13
-user.dir=C:\Users\Windows10\Documents\NetBeansProjects\jPosbox
-os.name=Windows 10
+java.runtime.version=10.0.2+13-Ubuntu-1ubuntu0.18.04.4
+user.dir=/home/gts/Desktop/jPosBox-master
+os.name=Linux
 os.arch=amd64
-os.version=10.0
+os.version=4.15.0-45-generic
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

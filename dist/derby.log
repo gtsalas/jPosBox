@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Feb 11 23:08:11 EET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0168-de63-87c0-00000f07c700 
+on database directory /home/gts/jPosBox/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@69663380 
+Loaded from file:/home/gts/Desktop/jPosBox-master/dist/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=10.0.2+13-Ubuntu-1ubuntu0.18.04.4
+user.dir=/home/gts/Desktop/jPosBox-master/dist
+os.name=Linux
+os.arch=amd64
+os.version=4.15.0-45-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
